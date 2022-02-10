@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Karla', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.main-container{
+        
+        display: grid;
+        grid-template-columns: 31.5rem 31.5rem;
+        grid-template-rows:21.7rem 25.8rem;
+        
+        
+}
+
+.up{
+    grid-column: 1/-1;
+    padding: 4rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    
+}
+
+.up h1{
+    color: hsl(179, 62%, 43%);
+}
+
+.up h2{
+    color: hsl(71, 73%, 54%);
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+.up p{
+    color: hsl(218, 22%, 67%);
+    margin-top: 2rem;
+    line-height: 1.5;
+
+}
+
+.month{
+   color: hsl(204, 43%, 93%);
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.dolar{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.left{
+    background-color:   hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    padding: 4rem;
+    border-bottom-left-radius: 10px;
+}
+
+.text{
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.left h2{
+    font-size: 18px;
+}
+
+button{
+    width: 23rem;
+    height: 5rem;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 1rem;
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    margin-top: 3.5rem;
+}
+
+.right{
+    background-color: #4ABEBD;
+    color: hsl(204, 43%, 93%);
+    padding: 4rem;
+    border-bottom-right-radius: 10px;
+}
+
+.right h2{
+    font-size: 18px;
+}
+
+.right p{
+    margin-top: 2rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+@media screen and (max-width:650px) {
+    
+    .main-container{
+        
+        grid-template-columns: 31.5rem;
+        grid-template-rows:27rem 22.7rem 22.7rem;
+    }
+
+
+    .up h1{
+        font-size: 20px;
+        margin-top: -1.5rem;
+    }
+
+    .left{
+        border-bottom-left-radius: 0;
+    }
+
+    .left h2{
+        margin-top: -1.5rem;
+    }
+
+    button{
+        margin-top:2rem ;
+        width: 25rem;
+    }
+
+    .right{
+        border-bottom-left-radius: 10px;
+    }
+
+    .right h2{
+        margin-top: -1.5rem;
+    }
+
+    
+}
